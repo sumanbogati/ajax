@@ -10,15 +10,20 @@
 </body>
 
 <script>
-//	var data = {'rdata' : 'hello'};
-	var data = 'rdata=hello&name=suman';
+	var data = 'rdata=hello&name=suman'; 
 	
+	// The path of server to which the HTTTP request is sent.
+	var path = 'server.php'; 
+	
+	/** The callback function will trigger, 
+		after fetching the data from server **/
 	function afterResponse(response){ 
 		var result = response.hasOwnProperty('error') ? "Something bad happens." : response.data;
 		document.querySelector("#result h3").innerHTML = result;
 	}
+	
 	Ajax.init();
-	Ajax.send('POST', data, 'server.php', afterResponse);
+	Ajax.send('POST', data, path, afterResponse);
 	
 </script>
 </html>

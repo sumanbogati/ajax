@@ -35,7 +35,6 @@
 			and "data" for sending to server.
 		**/
         send: function (method, data, path, cb) {
-			console.log('send');
 			/** callback function is initiate and
 			    will be invoked after got response from server **/
             this.cb = cb; 
@@ -53,15 +52,14 @@
 			}
 			// Sending request to server
 		    this.http.send(data); 
-        }
+        },
 		
 		/**
 			This Function triggers to show the HTTP request status, 
 			it gets the data from server if request is succeed
 		**/
-        onReadStateChange: function () {
-			console.log('init');
-            var that = this;
+        onReadStateChange : function () {
+		    var that = this;
             this.http.onreadystatechange = function (evt) {
 				console.log('ready state ' + that.http.readyState + ' status code ' + that.http.status);
 				// It means the fetch operation has been completed
