@@ -1,2 +1,4 @@
-# ajax
-This module is about sending the http request with using plain JavaScript
+# Ajax by using pure JavaScript
+
+You can get the complete steps about using  "Ajax by using plain JavaScript" on [Here](http://jsgyan.blogspot.in/2017/01/ajax-using-by-plain-javascript.html).
+
