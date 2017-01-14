@@ -9,5 +9,5 @@
 })();
 
 window.onload = function (){
-	document.querySelector('#jsgyanAjaxExample input.gsc-input').placeholder = 'Write here anything...';
+	document.querySelector('#jsgyanAjaxExample input.gsc-input').placeholder = 'Write anything here...';
 }
